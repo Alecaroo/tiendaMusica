@@ -1,16 +1,66 @@
-*{
-    background-color: #171715;
-}
 colors{
     black: #171715;
     red: #BC1028;
     gold: #B3AE88;
 }
-nav{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    
+}
+.header{
+    background-image: url(vanhalen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;  
+}
+.menu-container{
+    background-color:rgb(40 40 40 / 50%);
+    width: 100%;
+    height: 70vh;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: #B3AE88;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #B3AE88;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover{
 
 }
-
-ul{
-    color: #FFFF;
-    list-style-type: none;
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;   
 }
