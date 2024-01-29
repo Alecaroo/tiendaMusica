@@ -3,18 +3,20 @@ colors{
     red: #BC1028;
     gold: #B3AE88;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     
 }
 .header{
-    background-image: url(vanhalen.png);
+    background-image: url(./imagenes/vanhalen.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,15 +47,20 @@ body{
     position: relative;
     float: left;
 }
-.menu .navbar ul li a{
+#menu .navbar ul li a{
     font-size: 18px;
     padding: 20px;
     color: #B3AE88;
     display: block;
     font-weight: 600;
+    color: white;
 }
-.menu .navbar ul li a:hover{
-
+#menu .navbar ul li a:hover{
+    font-size: 8rem;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: 600;
 }
 #menu{
     display: none;
@@ -62,5 +69,26 @@ body{
     width: 25px;
 }
 .menu label{
-    cursor: pointer;   
+    cursor: pointer;
+    display: none;   
+}
+h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.header-content-container{
+    background-color: #171715;
+    color: white;
+}
+.btn-1{
+    width: 2rem;
+    height: 4rem;
+    background-color: #BC1028;
+    color: white;
+}
+.section1{
+    background-color: #171715;
+    color: white;
 }
