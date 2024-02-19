@@ -1,94 +1,440 @@
-colors{
-    black: #171715;
-    red: #BC1028;
-    gold: #B3AE88;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-*{
+/* Estilos generales */
+body.homepage {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #272822;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
 }
-body{
-    
-}
-.header{
-    background-image: url(./imagenes/vanhalen.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 70vh;
+
+
+.header {
+    background-color: #272822;
+    color: white;
+    padding: 20px;
     display: flex;
-    align-items: center;  
-}
-.menu-container{
-    background-color:rgb(40 40 40 / 50%);
-    width: 100%;
-    height: 70vh;
-}
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-.logo{
-    color: #B3AE88;
-    font-size: 25px;
-    font-weight: 800;
-}
-.menu .navbar ul li{
-    position: relative;
-    float: left;
-}
-#menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: #B3AE88;
-    display: block;
-    font-weight: 600;
-    color: white;
-}
-#menu .navbar ul li a:hover{
-    font-size: 8rem;
-    padding: 20px;
-    color: white;
-    display: block;
-    font-weight: 600;
-}
-#menu{
-    display: none;
-}
-.menu-icono{
-    width: 25px;
-}
-.menu label{
-    cursor: pointer;
-    display: none;   
-}
-h1{
     align-items: center;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.main-nav {
+    margin-right: 20px;
+}
+
+
+.additional-nav {
+    background-color: #553620;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.additional-nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.additional-nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+.additional-nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer {
+    background-color: #272822;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Clases específicas */
+.logo-img {
+    width: 100px; /* ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    margin-right: 10px;
+}
+/* Estilos para las imágenes */
+.guitarist-item img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    max-width: 300px; /* Establece un ancho máximo para evitar que las imágenes se hagan demasiado grandes */
+}
+.hero {
+    background-color: #272822;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+/*ESTILOS GUITARRISTAS*/
+
+
+/*ESTILOS BEST SELLERS*/
+.featured-bestseller {
+    text-align: center; /* Centra el texto del título */
+}
+
+.bestseller-list {
+    display: flex; /* Utiliza flexbox para alinear las cajas horizontalmente */
+    justify-content: center; /* Centra las cajas horizontalmente */
+    flex-wrap: wrap; /* Permite que las cajas se envuelvan en varias líneas si es necesario */
+}
+
+.bestseller-item {
+    width: 300px; /* Ancho de cada caja */
+    margin: 20px; /* Espaciado entre las cajas */
+    background-color: #d5a95a; /* Color de fondo de las cajas */
+    padding: 20px; /* Espaciado interno de las cajas */
+    text-align: center; /* Alinea el contenido al centro dentro de cada caja */
+}
+
+.bestseller-item img {
+    width: 100%; /* Establece un ancho del 100% para las imágenes */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+}
+
+.bestseller-name {
+    font-size: 1.5rem; /* Tamaño de fuente para el nombre del guitarrista */
+    margin-top: 10px; /* Espaciado superior del nombre del guitarrista */
+}
+
+.bestseller-description {
+    margin-top: 10px; /* Espaciado superior para la descripción del guitarrista */
+}
+
+.btn {
+    display: inline-block; /* Permite que los botones se ajusten al contenido */
+    margin-top: 10px; /* Espaciado superior para los botones */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    background-color: #272822; /* Color de fondo de los botones */
+    color: white; /* Color de texto de los botones */
+    border: none; /* Quita el borde de los botones */
+    border-radius: 5px; /* Agrega bordes redondeados a los botones */
+    transition: background-color 0.3s; /* Agrega transición suave al cambio de color de fondo */
+}
+
+.btn:hover {
+    background-color: #da2d2d; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+/*ESTILOS BAJOS*/
+.featured-guitarists {
+    text-align: center; /* Centra el texto del título */
+}
+
+.bass-list {
+    display: flex; /* Utiliza flexbox para alinear las cajas horizontalmente */
+    justify-content: center; /* Centra las cajas horizontalmente */
+    flex-wrap: wrap; /* Permite que las cajas se envuelvan en varias líneas si es necesario */
+}
+
+.bass-item {
+    width: 250px; /* Ancho de cada caja */
+    margin: 20px; /* Espaciado entre las cajas */
+    background-color: #d5a95a; /* Color de fondo de las cajas */
+    padding: 20px; /* Espaciado interno de las cajas */
+    text-align: center; /* Alinea el contenido al centro dentro de cada caja */
+}
+
+.bass-item img {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    margin-bottom: 10px; /* Espaciado inferior para separar la imagen del contenido */
+}
+
+.bass-name {
+    font-size: 1.5rem; /* Tamaño de fuente para el nombre del bajista */
+    margin-top: 10px; /* Espaciado superior del nombre del bajista */
+}
+
+.bass-description {
+    margin-top: 10px; /* Espaciado superior para la descripción del bajista */
+}
+
+.btn {
+    display: inline-block; /* Permite que los botones se ajusten al contenido */
+    margin-top: 10px; /* Espaciado superior para los botones */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    background-color: #272822; /* Color de fondo de los botones */
+    color: white; /* Color de texto de los botones */
+    border: none; /* Quita el borde de los botones */
+    border-radius: 5px; /* Agrega bordes redondeados a los botones */
+    transition: background-color 0.3s; /* Agrega transición suave al cambio de color de fondo */
+}
+
+.btn:hover {
+    background-color: #da2d2d; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+/*ESTILOS ACUSTICAS*/
+.featured-guitarists {
+    text-align: center; /* Centra el texto del título */
+}
+
+.acoustic-list {
+    display: flex; /* Utiliza flexbox para alinear las cajas horizontalmente */
+    justify-content: center; /* Centra las cajas horizontalmente */
+    flex-wrap: wrap; /* Permite que las cajas se envuelvan en varias líneas si es necesario */
+}
+
+.acoustic-item {
+    width: 250px; /* Ancho de cada caja */
+    margin: 20px; /* Espaciado entre las cajas */
+    background-color: #d5a95a; /* Color de fondo de las cajas */
+    padding: 20px; /* Espaciado interno de las cajas */
+    text-align: center; /* Alinea el contenido al centro dentro de cada caja */
+}
+
+.acoustic-item img {
+    width: 70%; /* Ajusta el ancho de la imagen al 70% del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    margin-bottom: 10px; /* Espaciado inferior para separar la imagen del contenido */
+}
+
+.acoustic-name {
+    font-size: 1.5rem; /* Tamaño de fuente para el nombre del producto */
+    margin-top: 10px; /* Espaciado superior del nombre del producto */
+}
+
+.acoustic-description {
+    margin-top: 10px; /* Espaciado superior para la descripción del producto */
+}
+
+.btn {
+    display: inline-block; /* Permite que los botones se ajusten al contenido */
+    margin-top: 10px; /* Espaciado superior para los botones */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    background-color: #272822; /* Color de fondo de los botones */
+    color: white; /* Color de texto de los botones */
+    border: none; /* Quita el borde de los botones */
+    border-radius: 5px; /* Agrega bordes redondeados a los botones */
+    transition: background-color 0.3s; /* Agrega transición suave al cambio de color de fondo */
+}
+
+.btn:hover {
+    background-color: #da2d2d; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+.acoustic{
+    background-color: #272822;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.acoustic-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.acoustic-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.acousticCaja-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.acoustic-image {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+}
+/*ESTILOS CONTACTO*/
+/* Estilos para la sección de contacto */
+.contact-section {
+    background-color: #d5a95a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #272822;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: #d9d1cf;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #272822;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: #272822;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #da2d2d;
+}
+/*ESTILO INICIO DE SESIÓN*/
+/* Estilos para la sección de inicio de sesión */
+.login-section {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 20px;
+    background-color: #d5a95a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.background {
+    background-color: #553620; /* Color de fondo para el área externa */
+    min-height: 100vh; /* Altura mínima para cubrir toda la pantalla */
     display: flex;
-    justify-content: center;
-    color: white;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
 }
-.header-content-container{
-    background-color: #171715;
-    color: white;
+
+.section-title {
+    color: #272822;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
-.btn-1{
-    width: 2rem;
-    height: 4rem;
-    background-color: #BC1028;
-    color: white;
+
+.login-form {
+    background-color: #d9d1cf;
+    padding: 20px;
+    border-radius: 10px;
 }
-.section1{
-    background-color: #171715;
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #272822;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: #272822;
     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #da2d2d;
+}
+.main-content{
+    background-color: #d5a95a;
+}
+/*ESTILOS SOBRE NOSOTROS*/
+#sobre-nosotros {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 20px;
+    background-color:#272822;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-nosotros h2 {
+    color: white; /* Color del título */
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+#sobre-nosotros p {
+    color: white; /* Color del texto */
+    font-size: 1.1rem; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 15px; /* Espaciado inferior entre párrafos */
+}
+.main-sobreNosotros{
+    background-color: #474646;
 }

@@ -1,49 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="menu-container">
-        <a href="#" class="logo">Logo</a>
-        <input type="checkbox" id="menu" />
-        <label for="menu">
-          <img src="icons8-menú-48.png" class="menu-icono" alt="" />
-        </label>
-        <nav class="navbar">
-          <ul>
-            <li><a href="Electrico.html">Electrico</a></li>
-            <li><a href="Acustico.html">Acustico</a></li>
-            <li><a href="Bajo.html">Bajo</a></li>
-            <li><a href="Amps&Pedals.html">Amps & Pedals</a></li>
-            <li><a href="Accesorios.html">Accesorios</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <h1>Slither Music</h1>
-      </div>
-    </header>
-    <div class="header-content-container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia
-        vero nesciunt enim adipisci magni dolore nemo atque minima fuga! Non
-        repellat sit magnam vel at, nesciunt nemo ad corporis.
-      </p>
-      <a href="#" class="btn-1">Información</a>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slither Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="homepage">
+  <header class="header">
+    <div class="logo">
+        <img src="./imagenes/Slither-icon.png" alt="Logo de Gibson" class="logo-img">
     </div>
-    <section class="section1">
-    <h2>seccion 1</h2>
-      <img src="" alt="" />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio amet,
-        saepe aliquid deserunt deleniti exercitationem quos, dolor obcaecati
-        dolore illo, incidunt cupiditate voluptatibus sequi? Aliquam provident
-        qui atque ullam dicta.
-      </p>
-    </section>
-  </body>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="Productos.html" class="nav-link">Productos</a></li>
+            <li><a href="Contacto.html" class="nav-link">Contacto</a></li>
+            <li><a href="SobreNosotros.html" class="nav-link">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+    <div class="user-options">
+        <a href="SignIn.html" class="btn btn-primary">Sign In</a>
+        <a href="Registro.html" class="btn btn-secondary">Register</a>
+    </div>
+</header>  
+    <main class="homepage-content">
+      <section class="hero">
+          <div class="hero-content">
+              <h2 class="hero-title">Toca como los mejores</h2>
+              <p class="hero-description">Obten tu instrumento y conviertete en un autentico Rockstar</p>
+          </div>
+          <img src="./imagenes/Brian-May.png" alt="Guitarra Gibson" class="hero-image">
+      </section>
+  
+      <section class="featured-guitarists">
+          <h2 class="section-title">Guitarristas destacados</h2>
+          <div class="guitarist-list">
+              <div class="guitarist-item">
+                  <img src="./imagenes/vanhalen.png" alt="Van Halen">
+                  <h3 class="guitarist-name">Eddie Van Halen</h3>
+                  <p class="guitarist-description">Disfruta de la innovación y la técnica incomparable de Eddie Van Halen en la guitarra eléctrica.</p>
+                  <a href="ListaVH.html" class="btn btn-secondary">Más información</a>
+              <div class="guitarist-item">
+                  <img src="./imagenes/Slash.png" alt="Slash">
+                  <h3 class="guitarist-name">Slash</h3>
+                  <p class="guitarist-description">Sumérgete en el mundo del rock con el icónico estilo de Slash en la guitarra.</p>
+                  <a href="#" class="btn btn-secondary">Más información</a>
+              </div>
+              <div class="guitarist-item">
+                  <img src="./imagenes/AngusYoung.png" alt="Angus Young">
+                  <h3 class="guitarist-name">Angus Young</h3>
+                  <p class="guitarist-description">Descubre la energía y el virtuosismo de Angus Young en la guitarra líder de AC/DC.</p>
+                  <a href="#" class="btn btn-secondary">Más información</a>
+              </div>
+          </div>
+      </section>
+      <section id="listaVH">
+
+      </section>
+      <section id="listaSlash">
+
+      </section>
+      <section id="listaACDC">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO49hLQA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </section>
+
+  </main>
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 Tu Empresa</p>
+    </footer>
+</body>
 </html>

@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Slither Music</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Guitarras Acusticas</h1>
+<body class="homepage">
+  <header class="header">
+    <div class="logo">
+        <img src="./imagenes/Slither-icon.png" alt="Logo de Gibson" class="logo-img">
+    </div>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="Electrico.html" class="nav-link">Eléctrico</a></li>
+            <li><a href="Acustico.html" class="nav-link">Acustico</a></li>
+            <li><a href="Bajo.html" class="nav-link">Bajo</a></li>
+            <li><a href="Contacto.html" class="nav-link">Contacto</a></li>
+            <li><a href="SobreNosotros.html" class="nav-link">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+    <div class="user-options">
+        <a href="SignIn.html" class="btn btn-primary">Sign In</a>
+        <a href="Registro.html" class="btn btn-secondary">Register</a>
+    </div>
+</header>  
+    <main class="homepage-content">
+      <section class="acoustic">
+          <div class="acoustic-content">
+              <h2 class="acoustic-title">Descubre tu estilo</h2>
+              <p class="acousticCaja-description"></p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+          <img src="./imagenes/caja-acustica.png" alt="Guitarra Gibson" class="acoustic-image">
+      </section>
+  
+      <section class="featured-guitarists">
+          <h2 class="section-title">Best Sellers</h2>
+          <div class="acoustic-list">
+              <div class="acoustic-item">
+                  <img src="./imagenes/Acustica1.png" alt="Van Halen">
+                  <h3 class="acoustic-name">Frankenstrat</h3>
+                  <p class="acoustic-description">Disfruta de la innovación y la técnica incomparable de Eddie Van Halen en la guitarra eléctrica.</p>
+                  <button class="btn btn-secondary">1.400€>
+              </div>
+              <div class="acoustic-item">
+                  <img src="./imagenes/Acustica2.png" alt="Slash">
+                  <h3 class="acoustic-name">Slash</h3>
+                  <p class="acoustic-description">Sumérgete en el mundo del rock con el icónico estilo de Slash en la guitarra.</p>
+                  <button class="btn btn-secondary">759€>
+              </div>
+              <div class="acoustic-item">
+                  <img src="./imagenes/Acustica3.png" alt="Angus Young">
+                  <h3 class="acoustic-name">Angus Young</h3>
+                  <p class="acoustic-description">Descubre la energía y el virtuosismo de Angus Young en la guitarra líder de AC/DC.</p>
+                  <button class="btn btn-secondary">1.666€>
+              </div>
+          </div>
+      </section>
+  </main>
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 Tu Empresa</p>
+    </footer>
 </body>
 </html>
